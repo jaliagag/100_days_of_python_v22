@@ -3,5 +3,32 @@
 
 {% block changing%}
 
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">¡Bienvenidos al registro de los 100 días de código!</div>
+        <div class="masthead-heading text-uppercase">Esta vez sí que lo lograrás</div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Arranquemos</a>
+    </div>
+</header>
+<h1>¡Recuerda usar mensajes significativos para tus commits!</h1>
+<button><a href="{% url 'search_commits' %}">Buscar commits por título</a></button>
+<ul>
+  {% for i in object_list %}
+  <li>
+    Título: <i>{{i.title}}</i>
+    <div>
+      <button><a href="{% url 'update_commit' i.id %}">Actualizar información</a></button>
+      <button><a href="{% url 'delete_commit' i.id %}">Eliminar</a></button>
+      <button><a href="{% url 'detail_commit' i.id %}">Inspeccionar</a></button>
+    </div>
+  </li>
+
+  {% endfor %}
+</ul>
+
+<button><a href="{% url 'create_commit' %}">Agregar nuevo commit</a></button>
+
+<p>¡Recuerda! ¡un commit por día mantiene a las recruiters interesadas!</p>
+
 {% endblock %}
 

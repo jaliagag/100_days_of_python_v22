@@ -29,6 +29,7 @@ def about(self):
     template = loader.get_template('tracker/about.html')
     document = template.render()
     return HttpResponse(document)
+
 # commits model
 class View_commits(ListView):
     model = Commits

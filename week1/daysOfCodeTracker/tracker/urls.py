@@ -19,7 +19,7 @@ urlpatterns = [
     path('commits/rm/<pk>', views.Delete_commit.as_view(), name='delete_commit'),
     path('commits/<pk>', views.Detail_commit.as_view(), name='detail_commit'),
     path('commits/edit/<pk>', views.Update_commit.as_view(), name='update_commit'),
-#    path('commits/add/', views.Create_commit, name='create_commit'),
-#    path('commits/list/', views.View_commits, name='list_commits'),
+    path('commits/list/', views.View_commits.as_view(), name='list_commits'),
+    path('commits/add/', views.Create_commit.as_view(), name='create_commit'),
 ]
 
