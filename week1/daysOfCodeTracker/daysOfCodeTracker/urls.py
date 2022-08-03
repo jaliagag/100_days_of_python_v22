@@ -23,4 +23,6 @@ urlpatterns = [
     path('saludo_inicial/', hi),
     # the app
     path('tracker/', include('tracker.urls')),
+    path('', include('tracker.urls'), name='home'),
+    path('/', include('tracker.urls'), name='home'),
 ]
