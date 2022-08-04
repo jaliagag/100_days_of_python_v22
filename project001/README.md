@@ -18,3 +18,14 @@
 - fixed layer 8 lists
 - added first test commit which was displayed succesfully (crud pending for tomorrow)
 - fixed templates/heritage (missing a couple)
+
+## Day 4
+
+- Created detailed view
+- investigating pulling information from github. sources:
+  - <https://www.section.io/engineering-education/working-with-github-web-api-in-python/>
+  - <https://github.com/PyGithub/PyGithub>
+  - <https://pygithub.readthedocs.io/en/latest/introduction.html>
+  - <https://towardsdatascience.com/all-the-things-you-can-do-with-github-api-and-python-f01790fca131>
+  - <https://docs.github.com/en/rest/commits/commits#list-commits>
+- reached a conclusion: rather than using the pygithub library, i have to use requests to fully use the API
