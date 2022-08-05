@@ -1,0 +1,1 @@
+curl -H "Accept: application/vnd.github+json" -H "authorization: token $GITHUB_TOKEN" https://api.github.com/repos/jaliagag/100_days_of_python_v22/commits
