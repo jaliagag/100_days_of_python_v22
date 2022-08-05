@@ -29,3 +29,7 @@
   - <https://towardsdatascience.com/all-the-things-you-can-do-with-github-api-and-python-f01790fca131>
   - <https://docs.github.com/en/rest/commits/commits#list-commits>
 - reached a conclusion: rather than using the pygithub library, i have to use requests to fully use the API
+
+## Day 5
+
+- I'm seeing master branch commits url and dates; now i need to see other branches' commits
