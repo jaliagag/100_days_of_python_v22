@@ -1,14 +1,35 @@
 {% extends "template.html" %}
 {% load static %}
 
-<header class="masthead">
-    <div class="container">
+{% block changing%}
+
+<header class="masthead" style="padding-top: 4rem; padding-bottom: 4rem">
+  <!--    <div class="container">
         <div class="masthead-subheading">¡Bienvenidos al registro de los 100 días de código!</div>
         <div class="masthead-heading text-uppercase">Esta vez sí que lo lograrás</div>
         <a class="btn btn-primary btn-xl text-uppercase" href="#services">Arranquemos</a>
     </div>
+  -->
 </header>
-{% block changing%}
+<table>
+  <tr>
+    <td>Título: </td>
+    <td>{{ commits.title }}</td>
+  </tr>
+  <tr>
+    <td>Descripción:</td> 
+    <td>{{ commits.description }}</td>
+  </tr>
+  <tr>
+    <td>Autor:</td> 
+    <td>{{ commits.author }}</td>
+  </tr>
+  <tr>
+    <td>Fecha de publicación: </td>
+    <td>{{ commits.date }}</td>
+  </tr>
+</table>
+  <button><a href="{% url 'list_commits' %}" style='text-decoration: none; color: #000000' >Volver</a></button>
 
 {% endblock %}
 
