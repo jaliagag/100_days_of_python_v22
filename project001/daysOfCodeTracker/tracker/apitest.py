@@ -19,7 +19,7 @@ r = requests.get(query_url, headers=headers, params=params).json()
 #pprint(r[1])
 
 for i in r:
-    print(i['html_url'])
+#    print(i['html_url'])
 #    print(i['commit'])
     print(i['commit']['author']['date'])
 #    print(type(r[i]))

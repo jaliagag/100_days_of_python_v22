@@ -33,3 +33,9 @@
 ## Day 5
 
 - I'm seeing master branch commits url and dates; now i need to see other branches' commits
+
+## Day 6
+
+- continue debugging the getting info from branches
+- view how to show the information gathered from a function on the django app
+- re-learned about MRO and super function

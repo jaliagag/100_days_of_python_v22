@@ -30,9 +30,18 @@ def about(self):
     document = template.render()
     return HttpResponse(document)
 
+# random functions
+
+
 # commits model
 class View_commits(ListView):
     model = Commits
+
+    def saludo():
+        a = "hola capo, este saludo viene desde una función"
+        return a
+
+    print(saludo())
     template_name = 'tracker/commits_list.html'
 
 class Detail_commit(DetailView):
@@ -64,5 +73,4 @@ def search_commits_action(request):
     else:
         answer = 'No se enviaron datos'
     return HttpResponse(answer)
-
 
