@@ -14,7 +14,7 @@
 <h1>¡Recuerda usar mensajes significativos para tus commits!</h1>
 <button><a href="{% url 'search_commits' %}">Buscar commits por título</a></button>
 <ul>
-  {% for i in object_list %}
+  {% for i in commit_list %}
   <li>
     Título: <i>{{i.title}}</i>
     <div>
@@ -30,8 +30,6 @@
 <button><a href="{% url 'create_commit' %}">Agregar nuevo commit</a></button>
 
 <p>¡Recuerda! ¡un commit por día mantiene a las recruiters interesadas!</p>
-
-
 
 {% endblock %}
 

@@ -39,3 +39,8 @@
 - continue debugging the getting info from branches
 - view how to show the information gathered from a function on the django app
 - re-learned about MRO and super function
+
+## Day 7
+
+- trying to get the function to show stuff on the template does not seem to be so easy unless info comes from the db (model)
+- going back to youtube 13 hours course on django...

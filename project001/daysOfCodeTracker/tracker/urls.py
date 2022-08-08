@@ -21,5 +21,6 @@ urlpatterns = [
     path('commits/edit/<pk>', views.Update_commit.as_view(), name='update_commit'),
     path('commits/list/', views.View_commits.as_view(), name='list_commits'),
     path('commits/add/', views.Create_commit.as_view(), name='create_commit'),
+    path('update/', views.update_commits_db, name='update_commits_db'),
 ]
 

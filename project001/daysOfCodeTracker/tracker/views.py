@@ -1,3 +1,5 @@
+import json
+
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
@@ -29,19 +31,17 @@ def about(self):
     template = loader.get_template('tracker/about.html')
     document = template.render()
     return HttpResponse(document)
-
-# random functions
-
+#
+def update_commits_db(self):
+    template = loader.get_template('tracker/update.html')
+    document = template.render()
+    return HttpResponse(document)
 
 # commits model
 class View_commits(ListView):
     model = Commits
-
-    def saludo():
-        a = "hola capo, este saludo viene desde una función"
-        return a
-
-    print(saludo())
+    # https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Generic_views
+    context_object_name = 'commit_list'   # your own name for the list as a template variable
     template_name = 'tracker/commits_list.html'
 
 class Detail_commit(DetailView):
