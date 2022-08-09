@@ -44,3 +44,7 @@
 
 - trying to get the function to show stuff on the template does not seem to be so easy unless info comes from the db (model)
 - going back to youtube 13 hours course on django...
+
+## Day 8
+
+- starting at 1:50 [free code camp django course](https://www.youtube.com/watch?v=o0XbHvKxw7Y&t=6540s)
